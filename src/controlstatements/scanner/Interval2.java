@@ -1,8 +1,8 @@
-package scanner;
+package controlstatements.scanner;
 
 import java.util.Scanner;
 
-public class ScannerDemo {
+public class Interval2 {
     public static void main(String[] args) {
         int num;
 
@@ -11,13 +11,10 @@ public class ScannerDemo {
         System.out.println("Enter the number: ");
         num = scan.nextInt();
 
-        for (int i=1;i<=num;i++){
+        System.out.println("Numbers by interval of 2 are: ");
 
-            if(i%2==0){
-                System.out.println("Even -> "+ i);
+        for (int i=1; i<=num; i=i+2){
+            System.out.println("No. -->" + i);
             }
-            else
-                System.out.println("Odd  -> "+ i);
-        }
     }
 }
