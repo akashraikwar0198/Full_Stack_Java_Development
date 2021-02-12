@@ -1,6 +1,6 @@
 package assignments;
 
-class Sum {
+class SumOfNaturalNumbers {
     public static void main(String[] args) {
         int num = 10, sum=0;
 
