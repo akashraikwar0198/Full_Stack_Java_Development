@@ -21,7 +21,7 @@ public class NumberGuessing {
                 System.out.println("Number is Low.");
             }
             else {
-                System.out.println("You guessed correct in " + trials + " trials");
+                System.out.println("You guessed correct number in " + trials + " trials");
             }
         }while (guess != number) ;
     }
