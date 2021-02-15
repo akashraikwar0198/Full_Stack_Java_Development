@@ -10,6 +10,8 @@ public class PrimeNumberOrNot {
         Scanner scanner = new Scanner(System.in);
         num = scanner.nextInt();
 
+        System.out.println("");
+
 
     }
 }
