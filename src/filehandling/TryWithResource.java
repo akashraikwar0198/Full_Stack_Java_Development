@@ -6,9 +6,7 @@ import java.io.IOException;
 
 public class TryWithResource {
 
-
     public static void main(String[] args) throws Exception {
-
         //to write a file
         try (FileWriter fileWriter = new FileWriter("FileWriter.txt")) {
 
@@ -30,4 +28,3 @@ public class TryWithResource {
         }
     }
 }
-

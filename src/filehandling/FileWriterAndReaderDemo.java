@@ -36,6 +36,5 @@ public class FileWriterAndReaderDemo {
         } finally {
             fileReader.close();
         }
-
     }
 }
