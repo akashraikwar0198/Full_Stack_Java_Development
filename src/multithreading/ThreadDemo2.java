@@ -13,7 +13,6 @@ public class ThreadDemo2 {
     }
 }
 
-
 class Hi2 extends Thread{
 
     public void run(){
@@ -47,3 +46,4 @@ class Bye{
         System.out.println("Bye..!!");
     }
 }
+
