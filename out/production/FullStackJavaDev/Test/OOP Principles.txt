@@ -1,0 +1,22 @@
+In Object Oriented Programming, there are four principles.
+They are as follows:
+1) Abstraction
+2) Polymorphism
+3) Inheritance
+4) Encapsulation
+
+1) Abstraction: Abstraction means hiding the internal details and showing the functionality to the user.
+
+2) Polymorphism: Polymorphism means ability to take many forms. In Java, polymorphism can be achieved by two methods namely
+                 method overloading and method overriding.
+                 Method Overloading: Used within a class
+                 Method Overriding: Used outside the class which has inherited the parent class.
+
+3) Inheritance: Inheritance is the ability to inherit all the properties of a class to the another class.
+                The class being inherited is known as parent class or super class or derived class.
+                The class who is inheriting the properties is called as child class or sub class or base class.
+
+4) Encapsulation: Encapsulation can be defined as wrapping up of data. It is used for data hiding.
+                  Advantage -> We can create a read only or write only class using Encapsulation.
+
+5)
