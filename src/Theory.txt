@@ -1,0 +1,60 @@
+1. public - Public is accessible through out the project
+      2. private - private is accessible only within class
+      3. protected - protected is accessible only within a package,
+                     but accessible in another package through inheritance
+      4. default - it is accessible only within a package. and it is more restrictive than protected.
+
+
+Polymorphism -
+            It is ability to take many forms.
+            ex-
+            1 . Method overloading - if same method name have multiple time is same class it is called method overloading.
+                                     It increases program readability.
+            rule for method overloading - 1. same name but different number of parameters
+                                          2. same number of parameter but different datatype.
+
+            2. Method Overriding - If child class have same method name in that parent class then is called method overriding.
+
+abstraction ->
+1) interface ->
+ *if interface have 1 abstract method this called functional interface;
+ *if interface have multiple methods then it is called normal interface
+ *if interface have no method then it is called marker interface.
+
+
+Throwable ->
+1. Exception ->
+             1. IOException
+             2. SQLException
+             3. FileNotFoundException
+             4. RunTimeException ->
+                                   - ArithmeticException
+                                   - NullPointerException
+                                   - NumberFormatException
+                                   - IndexOutOfBoundException -
+                                                              ArrayIndexOutOfBoundException
+                                                              StringIndexOutOfBoundException
+
+
+2. Error ->
+        1. StackOverFlowError
+        2. OutOfMemoryError
+        3. AssertionError
+
+
+ **There are two types Exceptions
+
+        1 .checked Exception - they are come at compile time and compiler will force you to handle these exception.
+        2. unchecked Exception - all runtime exception are unchecked exception.
+
+
+                                     Iterable(I)
+
+                                     Collection(I)
+
+  List(I)                               Queue(I)                             Set(I)
+1)Arraylist (C)                         1)PriorityQueue(C)                1)HashSet(C)
+2)LinkedList (C)                        2)Deque(I)                        2)LinkedHashSet
+                                                                          3)TreeSet(C)
+                                                                          4)SortedSet(I)
+3)Vector (C)
