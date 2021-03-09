@@ -4,14 +4,15 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class EmployeeDemo implements Comparable<EmployeeDemo> {
-
+public class EmployeeDemo implements Comparable<EmployeeDemo> {     //comparable -> single sorting sequence comparison like
+                                                                    // only id or name or address
+                                                                    //at a time
     int id;
     String name;
     String address;
 
     public EmployeeDemo(int id, String name, String address) {
-        this.id = id;
+        this.id = id ;
         this.name = name;
         this.address = address;
     }
@@ -31,20 +32,23 @@ public class EmployeeDemo implements Comparable<EmployeeDemo> {
         Collections.sort(list);
 
         list.forEach(s -> {
-            System.out.println(s.id + " " + s.name);
+            System.out.println(s.id + " " + s.name + " " + s.address);
         });
-
-
     }
 
-    @Override
-    public int compareTo(EmployeeDemo employeeDemo) {
-        if (this.id == employeeDemo.id) {
-            return 0;
-        } else if (this.id > employeeDemo.id) {
-            return 1;
-        } else {
-            return -1;
-        }
+    public int compareTo(EmployeeDemo employeeDemo) {           //by name
+        return this.name.compareTo(employeeDemo.name);
     }
+
+//    @Override
+//    public int compareTo(EmployeeDemo employeeDemo) {         //by id
+//        if (this.id == employeeDemo.id) {
+//            return 0;
+//        } else if (this.id > employeeDemo.id) {
+//            return 1;
+//        } else {
+//            return -1;
+//        }
+//    }
+
 }
