@@ -13,7 +13,7 @@ public class FileWriterAndReaderDemo {
         //to write a file
         try{
             fileWriter = new FileWriter("FileWriter.txt");
-            fileWriter.write("Today is Friday. Chhatrapati Shivaji Maharaj Jayanti. Jai Shivaji.");
+            fileWriter.write("Today is Friday.");
             System.out.println("File is written successfully");
             fileWriter.close();
         } catch (IOException ioException){
