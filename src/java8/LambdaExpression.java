@@ -31,7 +31,7 @@ public class LambdaExpression {
     }
 }
 
-@FunctionalInterface
+@FunctionalInterface            //having only 1 method
 interface MyInterface2{
     String msg();
 }

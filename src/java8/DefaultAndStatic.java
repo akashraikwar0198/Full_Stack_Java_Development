@@ -11,7 +11,6 @@ interface MyInterface {
     default String display() {
         return "In display";
     }
-
 }
 
 public class DefaultAndStatic implements MyInterface {
@@ -28,3 +27,11 @@ public class DefaultAndStatic implements MyInterface {
         return "Hii";
     }
 }
+
+/*
+default methods can be overridden inside the class.
+static methods cannot be overridden inside the class.
+
+default -> objName.methodName
+static -> className.methodName or interfaceName.methodName
+*/

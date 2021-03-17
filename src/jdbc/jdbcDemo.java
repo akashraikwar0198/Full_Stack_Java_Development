@@ -19,8 +19,9 @@ public class jdbcDemo {
             address = scanner.next();
             String sql = "insert into employee (id,name,address) values (?,?,?)";
 
-            Class.forName("com.mysql.jdbc.Driver");
-            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/java2feb?characterEncoding=latin1", "root", "password");
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/java2feb?characterEncoding=latin1",
+                                                                "root", "akkiicr");
             PreparedStatement statement = connection.prepareStatement(sql);
 
             statement.setInt(1, id);
@@ -28,7 +29,6 @@ public class jdbcDemo {
             statement.setString(3, address);
 
             int i = statement.executeUpdate();
-
 
             System.out.println(i + " row inserted.");
 //
@@ -40,8 +40,8 @@ public class jdbcDemo {
 
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
+        } catch (SQLException throwable) {
+            throwable.printStackTrace();
         }
     }
 }
